@@ -1,21 +1,18 @@
-﻿using NpgsqlTypes;
-using SistemaEstacionamento.Model;
+﻿using SistemaEstacionamento.Model;
 using SistemaEstacionamento.Repository;
-using System.ComponentModel;
 
 namespace SistemaEstacionamento.Service
 {
     public interface IEstacionamentoService
     {
         Cliente BuscaClientePorId(int id);
-        public void CadastrarVeiculo();
+        public void CadastrarVeiculo(Veiculo veiculo);
         public void CadastrarCliente(Cliente cliente);
         List<Veiculo> ListVeiculos();
         public List<Cliente> ListaClientes();
         public Cliente BuscaClientePorCpf(string cpf);
         void CadastraEntrada(string placa);
         void CadastraSaida(string placa);
-
         EntradaSaida BuscaMovimentacaoPorPlaca(string placa);
         List<EntradaSaida> BuscaMovimentacoes();
         Veiculo BuscaVeiculoPorPlaca(string placa);
@@ -23,7 +20,6 @@ namespace SistemaEstacionamento.Service
 
     public class EstacionamentoService : IEstacionamentoService
     {
-        //private readonly EstacionamentoRepository _estacionamentoRepository;
         private readonly IEstacionamentoRepository _repository;
 
         public EstacionamentoService(IEstacionamentoRepository repository)
@@ -31,36 +27,9 @@ namespace SistemaEstacionamento.Service
             _repository = repository;
         }
 
-        public void CadastrarVeiculo()
+        public void CadastrarVeiculo(Veiculo veiculo)
         {
-            Console.Clear();
-
-            Veiculo veiculo = new Veiculo();
-
-            Console.WriteLine("Digite o cpf do cliente");
-            var cpf = Console.ReadLine();
-
-            Console.WriteLine("Digite a marca");
-            var marca = Console.ReadLine();
-
-            Console.WriteLine("Digite o modelo");
-            var modelo = Console.ReadLine();
-
-            Console.WriteLine("Digite a placa");
-            var placa = Console.ReadLine();
-
-            var cliente = BuscaClientePorCpf(cpf);
-
-            veiculo = new Veiculo
-            {
-                Id_cliente = cliente.Id,
-                Marca = marca,
-                Modelo = modelo,
-                Placa = placa
-            };
-
             _repository.InserirVeiculo(veiculo);
-            Console.WriteLine("Veiculo cadastrado com sucesso ...");
         }
 
         public Veiculo BuscaVeiculoPorPlaca(string placa)
@@ -75,7 +44,6 @@ namespace SistemaEstacionamento.Service
         public void CadastrarCliente(Cliente cliente)
         {
             _repository.InserirCliente(cliente);
-            Console.WriteLine("Cliente cadastrado com sucesso ...");
         }
 
         public List<Cliente> ListaClientes()
@@ -95,8 +63,6 @@ namespace SistemaEstacionamento.Service
 
         public void CadastraEntrada(string placa)
         {
-            Console.Clear();
-
             var entrada = new EntradaSaida
             {
                 PlacaVeiculo = placa,
@@ -113,10 +79,6 @@ namespace SistemaEstacionamento.Service
 
         public void CadastraSaida(string placa)
         {
-            Console.Clear();
-
-            //Console.WriteLine("Digite a placa do carro");
-            //var placa = Console.ReadLine();
             var horarioSaida = DateTime.Now;
 
             _repository.InsereSaida(horarioSaida, placa);
@@ -126,7 +88,5 @@ namespace SistemaEstacionamento.Service
         {
             return _repository.BuscaMovimentacao();
         }
-
     }
-
 }

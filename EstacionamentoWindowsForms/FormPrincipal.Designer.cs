@@ -31,9 +31,10 @@
             btnCadastrarCliente = new Button();
             btnCadastrarVeiculo = new Button();
             btnListarClientes = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            textBox1 = new TextBox();
+            btnListaVeiculos = new Button();
+            btnRegistrarEntrada = new Button();
+            btnRegistrarSaida = new Button();
+            btnListarMovimentacoes = new Button();
             SuspendLayout();
             // 
             // btnCadastrarCliente
@@ -54,6 +55,7 @@
             btnCadastrarVeiculo.TabIndex = 1;
             btnCadastrarVeiculo.Text = "Cadastrar veiculo";
             btnCadastrarVeiculo.UseVisualStyleBackColor = true;
+            btnCadastrarVeiculo.Click += btnCadastrarVeiculo_Click;
             // 
             // btnListarClientes
             // 
@@ -63,47 +65,63 @@
             btnListarClientes.TabIndex = 2;
             btnListarClientes.Text = "Listar clientes";
             btnListarClientes.UseVisualStyleBackColor = true;
+            btnListarClientes.Click += btnListarClientes_Click;
             // 
-            // button4
+            // btnListaVeiculos
             // 
-            button4.Location = new Point(28, 171);
-            button4.Name = "button4";
-            button4.Size = new Size(259, 29);
-            button4.TabIndex = 3;
-            button4.Text = "button4";
-            button4.UseVisualStyleBackColor = true;
+            btnListaVeiculos.Location = new Point(28, 171);
+            btnListaVeiculos.Name = "btnListaVeiculos";
+            btnListaVeiculos.Size = new Size(259, 29);
+            btnListaVeiculos.TabIndex = 3;
+            btnListaVeiculos.Text = "Listar veiculos";
+            btnListaVeiculos.UseVisualStyleBackColor = true;
+            btnListaVeiculos.Click += button4_Click;
             // 
-            // button5
+            // btnRegistrarEntrada
             // 
-            button5.Location = new Point(28, 222);
-            button5.Name = "button5";
-            button5.Size = new Size(259, 29);
-            button5.TabIndex = 4;
-            button5.Text = "button5";
-            button5.UseVisualStyleBackColor = true;
+            btnRegistrarEntrada.Location = new Point(28, 222);
+            btnRegistrarEntrada.Name = "btnRegistrarEntrada";
+            btnRegistrarEntrada.Size = new Size(259, 29);
+            btnRegistrarEntrada.TabIndex = 4;
+            btnRegistrarEntrada.Text = "Registrar entrada";
+            btnRegistrarEntrada.UseVisualStyleBackColor = true;
+            btnRegistrarEntrada.Click += btnRegistrarEntrada_Click;
             // 
-            // textBox1
+            // btnRegistrarSaida
             // 
-            textBox1.Location = new Point(508, 198);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 5;
+            btnRegistrarSaida.Location = new Point(28, 272);
+            btnRegistrarSaida.Name = "btnRegistrarSaida";
+            btnRegistrarSaida.Size = new Size(259, 30);
+            btnRegistrarSaida.TabIndex = 5;
+            btnRegistrarSaida.Text = "Registrar saida";
+            btnRegistrarSaida.UseVisualStyleBackColor = true;
+            btnRegistrarSaida.Click += btnRegistrarSaida_Click;
+            // 
+            // btnListarMovimentacoes
+            // 
+            btnListarMovimentacoes.Location = new Point(28, 318);
+            btnListarMovimentacoes.Name = "btnListarMovimentacoes";
+            btnListarMovimentacoes.Size = new Size(259, 30);
+            btnListarMovimentacoes.TabIndex = 6;
+            btnListarMovimentacoes.Text = "Listar movimentações";
+            btnListarMovimentacoes.UseVisualStyleBackColor = true;
+            btnListarMovimentacoes.Click += btnListarMovimentacoes_Click;
             // 
             // FormPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(textBox1);
-            Controls.Add(button5);
-            Controls.Add(button4);
+            ClientSize = new Size(327, 380);
+            Controls.Add(btnListarMovimentacoes);
+            Controls.Add(btnRegistrarSaida);
+            Controls.Add(btnRegistrarEntrada);
+            Controls.Add(btnListaVeiculos);
             Controls.Add(btnListarClientes);
             Controls.Add(btnCadastrarVeiculo);
             Controls.Add(btnCadastrarCliente);
             Name = "FormPrincipal";
             Text = "Form1";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -111,8 +129,9 @@
         private Button btnCadastrarCliente;
         private Button btnCadastrarVeiculo;
         private Button btnListarClientes;
-        private Button button4;
-        private Button button5;
-        private TextBox textBox1;
+        private Button btnListaVeiculos;
+        private Button btnRegistrarEntrada;
+        private Button btnRegistrarSaida;
+        private Button btnListarMovimentacoes;
     }
 }

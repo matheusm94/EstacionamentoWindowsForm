@@ -7,10 +7,10 @@ namespace EstacionamentoWindowsForms
     public partial class FormCliente : Form
     {
         private readonly IEstacionamentoService _estacionamentoService;
-  
+
         public FormCliente(IEstacionamentoService estacionamentoService)
         {
-          _estacionamentoService = estacionamentoService;
+            _estacionamentoService = estacionamentoService;
             InitializeComponent();
         }
 

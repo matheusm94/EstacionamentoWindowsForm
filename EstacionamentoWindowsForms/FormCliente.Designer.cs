@@ -31,6 +31,8 @@
             txtNome = new TextBox();
             txtCpf = new TextBox();
             btnSalvaCliente = new Button();
+            lblNome = new Label();
+            lblCpf = new Label();
             SuspendLayout();
             // 
             // txtNome
@@ -49,7 +51,7 @@
             // 
             // btnSalvaCliente
             // 
-            btnSalvaCliente.Location = new Point(269, 165);
+            btnSalvaCliente.Location = new Point(269, 137);
             btnSalvaCliente.Name = "btnSalvaCliente";
             btnSalvaCliente.Size = new Size(75, 23);
             btnSalvaCliente.TabIndex = 2;
@@ -57,15 +59,35 @@
             btnSalvaCliente.UseVisualStyleBackColor = true;
             btnSalvaCliente.Click += btnSalvaCliente_Click;
             // 
-            // Cliente
+            // lblNome
+            // 
+            lblNome.AutoSize = true;
+            lblNome.Location = new Point(48, 14);
+            lblNome.Name = "lblNome";
+            lblNome.Size = new Size(137, 15);
+            lblNome.TabIndex = 3;
+            lblNome.Text = "Digite o nome do cliente";
+            // 
+            // lblCpf
+            // 
+            lblCpf.AutoSize = true;
+            lblCpf.Location = new Point(49, 66);
+            lblCpf.Name = "lblCpf";
+            lblCpf.Size = new Size(123, 15);
+            lblCpf.TabIndex = 4;
+            lblCpf.Text = "Digite o cpf do cliente";
+            // 
+            // FormCliente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(399, 209);
+            ClientSize = new Size(386, 190);
+            Controls.Add(lblCpf);
+            Controls.Add(lblNome);
             Controls.Add(btnSalvaCliente);
             Controls.Add(txtCpf);
             Controls.Add(txtNome);
-            Name = "Cliente";
+            Name = "FormCliente";
             Text = "Cliente";
             ResumeLayout(false);
             PerformLayout();
@@ -76,5 +98,7 @@
         private TextBox txtNome;
         private TextBox txtCpf;
         private Button btnSalvaCliente;
+        private Label lblNome;
+        private Label lblCpf;
     }
 }

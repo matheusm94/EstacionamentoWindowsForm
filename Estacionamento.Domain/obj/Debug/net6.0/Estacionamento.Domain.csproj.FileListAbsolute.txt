@@ -1,0 +1,13 @@
+C:\Users\mathe\source\repos\EstacionamentoWindowsForm\Estacionamento.Domain\bin\Debug\net6.0\Estacionamento.Domain.deps.json
+C:\Users\mathe\source\repos\EstacionamentoWindowsForm\Estacionamento.Domain\bin\Debug\net6.0\Estacionamento.Domain.dll
+C:\Users\mathe\source\repos\EstacionamentoWindowsForm\Estacionamento.Domain\bin\Debug\net6.0\Estacionamento.Domain.pdb
+C:\Users\mathe\source\repos\EstacionamentoWindowsForm\Estacionamento.Domain\obj\Debug\net6.0\Estacionamento.Domain.csproj.AssemblyReference.cache
+C:\Users\mathe\source\repos\EstacionamentoWindowsForm\Estacionamento.Domain\obj\Debug\net6.0\Estacionamento.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mathe\source\repos\EstacionamentoWindowsForm\Estacionamento.Domain\obj\Debug\net6.0\Estacionamento.Domain.AssemblyInfoInputs.cache
+C:\Users\mathe\source\repos\EstacionamentoWindowsForm\Estacionamento.Domain\obj\Debug\net6.0\Estacionamento.Domain.AssemblyInfo.cs
+C:\Users\mathe\source\repos\EstacionamentoWindowsForm\Estacionamento.Domain\obj\Debug\net6.0\Estacionamento.Domain.csproj.CoreCompileInputs.cache
+C:\Users\mathe\source\repos\EstacionamentoWindowsForm\Estacionamento.Domain\obj\Debug\net6.0\Estacionamento.Domain.dll
+C:\Users\mathe\source\repos\EstacionamentoWindowsForm\Estacionamento.Domain\obj\Debug\net6.0\refint\Estacionamento.Domain.dll
+C:\Users\mathe\source\repos\EstacionamentoWindowsForm\Estacionamento.Domain\obj\Debug\net6.0\Estacionamento.Domain.pdb
+C:\Users\mathe\source\repos\EstacionamentoWindowsForm\Estacionamento.Domain\obj\Debug\net6.0\ref\Estacionamento.Domain.dll
+C:\Users\mathe\source\repos\EstacionamentoWindowsForm\Estacionamento.Domain\bin\Debug\net6.0\appsettings.json

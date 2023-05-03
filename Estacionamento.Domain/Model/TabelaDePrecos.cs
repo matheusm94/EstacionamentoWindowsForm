@@ -2,5 +2,6 @@
 {
     public class TabelaDePrecos
     {
+        public float PrecoPorHora { get; set; } = 6;
     }
 }

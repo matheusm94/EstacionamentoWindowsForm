@@ -335,37 +335,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\matheus.matos\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\mathe\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\matheus.matos\\source\\repos\\EstacionamentoWindowsForms\\Estacionamento.Domain\\Estacionamento.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\mathe\\Source\\Repos\\EstacionamentoWindowsForm\\Estacionamento.Domain\\Estacionamento.Domain.csproj",
       "projectName": "Estacionamento.Domain",
-      "projectPath": "C:\\Users\\matheus.matos\\source\\repos\\EstacionamentoWindowsForms\\Estacionamento.Domain\\Estacionamento.Domain.csproj",
-      "packagesPath": "C:\\Users\\matheus.matos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\matheus.matos\\source\\repos\\EstacionamentoWindowsForms\\Estacionamento.Domain\\obj\\",
+      "projectPath": "C:\\Users\\mathe\\Source\\Repos\\EstacionamentoWindowsForm\\Estacionamento.Domain\\Estacionamento.Domain.csproj",
+      "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mathe\\Source\\Repos\\EstacionamentoWindowsForm\\Estacionamento.Domain\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\matheus.matos\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "http://nuget.animaeducacao.com.br/nuget": {},
-        "https://alm-animaeducacao.pkgs.visualstudio.com/_packaging/animacore/nuget/v3/index.json": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -413,16 +402,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1803",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://nuget.animaeducacao.com.br/nuget'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
-    }
-  ]
+  }
 }

@@ -32,6 +32,7 @@
             label1 = new Label();
             lblRegistrarSaida = new Label();
             txtPlacaVeiculo = new TextBox();
+            lblPreco = new Label();
             SuspendLayout();
             // 
             // btnRegistrarSaida
@@ -70,11 +71,22 @@
             txtPlacaVeiculo.Size = new Size(227, 23);
             txtPlacaVeiculo.TabIndex = 3;
             // 
+            // lblPreco
+            // 
+            lblPreco.AutoSize = true;
+            lblPreco.Location = new Point(27, 137);
+            lblPreco.Name = "lblPreco";
+            lblPreco.Size = new Size(70, 15);
+            lblPreco.TabIndex = 4;
+            lblPreco.Text = "Preço total: ";
+            lblPreco.Click += label2_Click;
+            // 
             // FormSaidaVeiculo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(440, 154);
+            ClientSize = new Size(440, 173);
+            Controls.Add(lblPreco);
             Controls.Add(txtPlacaVeiculo);
             Controls.Add(lblRegistrarSaida);
             Controls.Add(label1);
@@ -91,5 +103,6 @@
         private Label label1;
         private Label lblRegistrarSaida;
         private TextBox txtPlacaVeiculo;
+        private Label lblPreco;
     }
 }
